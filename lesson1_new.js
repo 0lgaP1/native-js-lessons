@@ -9,6 +9,16 @@
 //2) имеются свои методы и свойста
 //3) ссылочный тип данных
 
+console.log(typeof typeof null) // "object"
+console.log(typeof undefined) // "undefined"
+console.log(typeof 123) // "number"
+console.log(typeof NaN) // "number"
+// приведение типов
+console.log(10 + "0") // 100
+console.log(10 * null) // 0
+console.log(10 * "0") //
+
+
 // //мутабельно
 // const users1 = {
 //   // #12345
