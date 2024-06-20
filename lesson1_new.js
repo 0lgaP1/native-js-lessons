@@ -16,8 +16,7 @@ console.log(typeof NaN) // "number"
 // приведение типов
 console.log(10 + "0") // 100
 console.log(10 * null) // 0
-console.log(10 * "0") //
-
+console.log(10 * "0") // 0
 
 // //мутабельно
 // const users1 = {
@@ -92,6 +91,42 @@ console.log(10 * "0") //
 //     isStudent: true,
 //   },
 // ];
+
+const userArray = [
+  { userId: 1,
+    id: 11,
+    done: true,
+    title: "red"
+  }, 
+  { userId: 2,
+    id: 12,
+    done: false,
+    title: "blue"
+  }, 
+  { userId: 3,
+    id: 13,
+    done: true,
+    title: "green"
+  }, 
+]
+
+const newUser = {
+  userId: 4,
+  id: 14,
+  done: false,
+  title: "black"
+}
+
+const copyUserArray = [...userArray] //create
+const newUserArray = [...userArray, newUser]; // userArray.concat(newUser)
+
+const copy2UserArray = copyUserArray.filter(user => user.done !== 13) // delete 
+
+const newTitleForUser = "yellow"
+const upCopyUserArray = copyUserArray.map(u => u.id === 12 ? {...u, title: newTitleForUser} : u) //update
+console.log(upCopyUserArray);
+
+
 
 //pop() - удлить последнего юзера
 
