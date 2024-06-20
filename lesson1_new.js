@@ -18,6 +18,9 @@ console.log(10 + "0") // 100
 console.log(10 * null) // 0
 console.log(10 * "0") // 0
 
+const a = {};
+console.log(a)
+
 // //мутабельно
 // const users1 = {
 //   // #12345
@@ -125,8 +128,6 @@ const copy2UserArray = copyUserArray.filter(user => user.done !== 13) // delete
 const newTitleForUser = "yellow"
 const upCopyUserArray = copyUserArray.map(u => u.id === 12 ? {...u, title: newTitleForUser} : u) //update
 console.log(upCopyUserArray);
-
-
 
 //pop() - удлить последнего юзера
 
