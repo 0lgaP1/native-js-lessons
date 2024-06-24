@@ -99,6 +99,3 @@ const { firstName: nameVariable, lastName: lastNameVariable, age = 25 } = person
 console.log(nameVariable); // 'Max'
 console.log(lastNameVariable); // 'Johnson'
 console.log(age); // 25 (значение по умолчанию)
-
-//11
-
