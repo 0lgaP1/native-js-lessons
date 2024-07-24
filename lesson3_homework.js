@@ -2,7 +2,9 @@
 
 let str = 'Hello, world!';
 let startIndex = 7;
-
+function getSubStr(str, startIndex) {
+    return str.slice(startIndex);
+}
 
 console.log(getSubStr(str, startIndex)); // Выведет: "world!"
 
