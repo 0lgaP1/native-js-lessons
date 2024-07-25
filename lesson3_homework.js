@@ -1,29 +1,43 @@
-// slice
+// SLICE
 
 let str = 'Hello, world!';
 let startIndex = 7;
+
 function getSubStr(str, startIndex) {
     return str.slice(startIndex);
 }
-
 console.log(getSubStr(str, startIndex)); // Выведет: "world!"
 
-//
+// function returns tha last n array elements  (-n)
 
+function getLastElements (array, n) {
+    return array.slice(-n)
+}
 console.log(getLastElements([1, 2, 3, 4, 5], 3)); // Выведет: [3, 4, 5]
 
-//
+// cut the URL path
 
+function extractPath (string, n) {
+    return string.slice(n)
+}
 console.log(extractPath('https://example.com/blog/article', 18)); // Выведет: "/blog/article"
 
-//
+// SPLICE (returns the array itself)
+let numbersArray = [1, 2, 3, 4, 5];
+function removeElement (numbersArray, index) {
+    numbersArray.splice(index, 1);
+    return numbersArray;
+}
 
-let numbers = [1, 2, 3, 4, 5];
-console.log(removeElement(numbers, 2)); // Выведет: [1, 2, 4, 5]
+console.log(removeElement(numbersArray, 2)); // Выведет: [1, 2, 4, 5]
 
-//
+// delete and insert elements
 
-let numbers = [1, 2, 4, 5];
+let numbers2 = [1, 2, 4, 5];
+function insertElement (numbers2, index, newElem) {
+    numbers2.splice(index, 0, newElem);
+    return numbers2
+}
 console.log(insertElement(numbers, 2, 3)); // Выведет: [1, 2, 3, 4, 5]
 
 // reduce
