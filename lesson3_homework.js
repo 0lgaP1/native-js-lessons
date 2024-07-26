@@ -42,17 +42,34 @@ console.log(insertElement(numbers, 2, 3)); // Выведет: [1, 2, 3, 4, 5]
 
 // reduce
 
-let numbers = [1, 2, 3, 4, 5];
-console.log(sumArray(numbers)); // Выведет: 15
+let numbers3 = [1, 2, 3, 4, 5];
+let sumArray = numbers3.reduce((acc, currentNumb)=>{
+    return acc + currentNumb
+}, 0)
+console.log(sumArray); // Выведет: 15
 
-//
+ // OR 
+function sumArray2 (arr) {
+    return arr.reduce((accum, currentValue) => accum + currentValue, 0)
+}
+console.log(sumArray2(numbers3))
 
+// sum of strings' length
+
+function sumStringLengths (stringArr) {
+    let lengths = stringArr.map(item => item.length)
+    return lengths.reduce((accum, currentValue) => accum + currentValue, 0)
+}
 console.log(sumStringLengths(['apple', 'banana', 'cherry'])); // Выведет: 17
 
 
-//
+// reduce arrays of number arrays
 
-console.log(sumNestedArrays([[1, 2], [3, 4, 5], [6, 7, 8, 9],]))
+function sumNestedArrays (nestedArrays) {
+    let flattedArrays = nestedArrays.flat();
+    return flattedArrays.reduce((accum, currentValue) => accum + currentValue, 0)
+}
+console.log(sumNestedArrays([[1, 2], [3, 4, 5], [6, 7, 8, 9],])) //Output: 45
 
 //
 
