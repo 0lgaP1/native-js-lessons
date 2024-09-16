@@ -42,15 +42,15 @@
 
 // get sum of score's numerical values
 
-  //  let scores = {
-  //   math: 90,
-  //   english: 85,
-  //   science: 92,
-  //  };
+//  let scores = {
+//   math: 90,
+//   english: 85,
+//   science: 92,
+//  };
 
-  //  let totalScore = Object.values(scores).reduce((acc, element)=>{
-  //   return acc+=element, 0});
-  //  console.log(totalScore); // 267
+//  let totalScore = Object.values(scores).reduce((acc, element)=>{
+//   return acc+=element, 0});
+//  console.log(totalScore); // 267
 
 //    Напишите функцию objectToArray(obj), которая принимает объект и возвращает массив массивов, где каждый подмассив содержит пару ключ-значение. (Object.entries())
 // create a function objectToArray(obj), which takes an object and returns array of arrays, where each inner array has it's pair of prop-value
@@ -61,37 +61,39 @@
 //    }
 // console.log(objectToArray(obj)); // [['a', 1], ['b', 2], ['c', 3]]
 
-// new Map + set + get 
-  let students = new Map();
-  students.set('Olya', 10);
-  students.set('Nadya', 8);
-  students.set('Ira', 3);
-console.log(students.get('Olya'));
+// new Map + set + get
+// let students = new Map();
+// students.set("Olya", 10);
+// students.set("Nadya", 8);
+// students.set("Ira", 3);
+// console.log(students.get("Olya"));
 
-// 
-
+// Создайте Map с данными о продуктах (ключ — название продукта, значение — цена). Проверьте наличие определенного продукта и удалите его, если он существует.(new Map, has, delete)
+// объект карты Map называется продактс
 // let products = new Map([
 //     ['Milk', 1.2],
 //     ['Bread', 1.5],
 //     ['Cheese', 2.5],
 //    ]);
-
-//    //
-
-//    console.log(products.has('Bread')); // false
+// if (products.has('Bread')) {
+//   products.delete('Bread')
+// };
+ 
+// console.log(products.has('Bread')); // false
 // console.log(products); // Map(2) { 'Milk' => 1.2, 'Cheese' => 2.5 }
 
-// //
+// Создайте Set с несколькими элементами. Проверьте наличие определенного элемента и удалите его, если он существует.(new Set, has, delete)
 
-// let fruits = new Set(['apple', 'banana', 'mango']);
-// console.log(fruits.has('banana')); // false
-// //
+let fruits = new Set(['apple', 'banana', 'mango']);
+if (fruits.has('banana')) {
+  fruits.delete('banana');
+}
+console.log(fruits.has('banana')); // false
+// remove duplicates from the array
 
-// const numbers = [1, 1, 4, 6, 7, 8, 9, 0, 0, 10, 10, 11]
-
-// //
-
-// console.log('result: ', result); //result:  [
+const numbers = [1, 1, 4, 6, 7, 8, 9, 0, 0, 10, 10, 11]
+let result = [...new Set(numbers)];
+console.log('result: ', result); //result:  [
 //     //   1, 4,  6,  7, 8,
 //     //   9, 0, 10, 11
 //     // ]
