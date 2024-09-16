@@ -8,7 +8,7 @@ function getSubStr(str, startIndex) {
 }
 console.log(getSubStr(str, startIndex)); // Выведет: "world!"
 
-// function returns tha last n array elements  (-n)
+// function returns the last n array elements  (-n)
 
 function getLastElements(array, n) {
   return array.slice(-n);
