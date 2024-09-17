@@ -84,11 +84,11 @@
 
 // Создайте Set с несколькими элементами. Проверьте наличие определенного элемента и удалите его, если он существует.(new Set, has, delete)
 
-let fruits = new Set(['apple', 'banana', 'mango']);
-if (fruits.has('banana')) {
-  fruits.delete('banana');
-}
-console.log(fruits.has('banana')); // false
+// let fruits = new Set(['apple', 'banana', 'mango']);
+// if (fruits.has('banana')) {
+//   fruits.delete('banana');
+// }
+// console.log(fruits.has('banana')); // false
 // remove duplicates from the array
 
 const numbers = [1, 1, 4, 6, 7, 8, 9, 0, 0, 10, 10, 11]
