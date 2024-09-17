@@ -134,18 +134,20 @@
 //   "Charlie: 5, 5, 5"
 // ]
 
-// // 10
+// У вас есть объект, представляющий информацию о студентах и их оценках. Напишите функцию, которая принимает этот объект и возвращает массив имен студентов (Object,keys())
 
 // const students = {
 //     Alice: [4, 5, 3],
 //     Bob: [3, 2, 4],
 //     Charlie: [5, 5, 5]
 //    };
-
+//    function getStudentNames (obj) {
+//     return Object.keys(obj)
+//    }
 //    console.log(getStudentNames(students));
-//    // Вывод: ["Alice", "Bob", "Charlie"]
+   // Вывод: ["Alice", "Bob", "Charlie"]
 
-//    //11
+//  У вас есть объект, представляющий информацию о книгах в библиотеке. Каждая книга имеет свойство genre, представляющее жанр книги. Напишите функцию, которая принимает этот объект и возвращает массив уникальных жанров книг (new Set, Object.values(), map)
 
 //    const library = {
 //     'The Great Gatsby': { genre: 'Fiction' },
@@ -154,19 +156,26 @@
 //    'Pride and Prejudice': { genre: 'Romance' },
 //    'The Catcher in the Rye': { genre: 'Fiction' },
 //   };
-
+// function getUniqueGenres (obj) {
+//     const genres = new Set (Object.values(obj).map((item)=>item.genre))
+//     return [...genres]
+// }
 //   console.log(getUniqueGenres(library));
-//   // Вывод: ["Fiction", "Science Fiction", "Romance"]
+  // Вывод: ["Fiction", "Science Fiction", "Romance"]
 
-// //12
+// У вас есть массив пар ключ-значение. Напишите функцию, которая принимает этот массив и возвращает новый объект Map с этими парами.
 
 // const pairs = [
 //     ['a', 1],
 //     ['b', 2],
 //     ['c', 3],
 //    ];
+
+//    function createMapFromArray (arr) {
+//     return new Map (arr)
+//    }
 //    console.log(createMapFromArray(pairs));
-//    // Вывод: Map { 'a' => 1, 'b' => 2, 'c' => 3 }
+   // Вывод: Map { 'a' => 1, 'b' => 2, 'c' => 3 }
 
 // // objectToArray(obj)
 
