@@ -177,13 +177,3 @@
 //    console.log(createMapFromArray(pairs));
    // Вывод: Map { 'a' => 1, 'b' => 2, 'c' => 3 }
 
-// // objectToArray(obj)
-
-// let obj = { a: 1, b: 2, c: 3 };
-// console.log(objectToArray(obj)); // [['a', 1], ['b', 2], ['c', 3]]
-
-// // map+set+get
-
-// // new map, has, delete
-
-// //
